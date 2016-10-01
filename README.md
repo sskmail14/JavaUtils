@@ -1,4 +1,3 @@
-@@ -1,32 +0,0 @@
 # Purpose of this Util
 This util is for reading the number of files in a directory(including all the sub-directories) and read the total number of lines of all the files.
 
