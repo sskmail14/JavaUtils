@@ -1,5 +1,5 @@
 
-class Person{
+class Person implements Comparable<Person>{
 	private String name;
 	private Integer age;
 	
@@ -20,5 +20,9 @@ class Person{
 	
 	public String toString(){
 		return "["+name+","+age+"]";
+	}
+	
+	public int compareTo(Person p){
+		return name.compareTo(p.name);
 	}
 }
