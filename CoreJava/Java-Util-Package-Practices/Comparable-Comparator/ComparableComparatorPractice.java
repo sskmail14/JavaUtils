@@ -64,8 +64,11 @@ class ComparableComparatorPractice{
 		p.add(new Person("George",78));
 		System.out.println("Actual List: ");
 		System.out.println(p);
+		Collections.sort(p);
+		System.out.println("List after sorting by name(default - class level implementation): ");
+		System.out.println(p);
 		Collections.sort(p,PERSON_SORT_BY_NAME);
-		System.out.println("List after sorting by name: ");
+		System.out.println("List after sorting by name(enforced): ");
 		System.out.println(p);
 		Collections.sort(p,PERSON_SORT_BY_AGE);
 		System.out.println("List after sorting by age: ");
