@@ -25,3 +25,12 @@ keytool -import -alias client-alias1 -file cert_client_keytool.crt  -keystore "%
 >Note
 
 Add Host Entry - 127.0.0.1 client.testssl.com
+
+>Certs Info
+Country Name (2 letter code) [AU]:IN
+State or Province Name (full name) [Some-State]:TN
+Locality Name (eg, city) []:ED
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Local
+Organizational Unit Name (eg, section) []:Local
+Common Name (eg, YOUR name) []:*.testssl.com
+Email Address []:test@testssl.com
