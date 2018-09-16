@@ -1,5 +1,7 @@
 >Certificate Generation Steps
 
+Add Host Entry - 127.0.0.1 client.testssl.com
+
 keytool -genkeypair -alias server-alias1 -keyalg RSA -dname "CN=*.testssl.com,OU=Local,O=Local,L=ED,S=TN,C=IN" -keypass testssl123 -keystore server-keystore.jks -storepass testssl123
 keytool -genkeypair -alias client-alias1 -keyalg RSA -dname "CN=*.testssl.com,OU=Local,O=Local,L=ED,S=TN,C=IN" -keypass testssl123 -keystore client-keystore.jks -storepass testssl123
 
