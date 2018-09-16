@@ -1,7 +1,5 @@
 >Certificate Generation Steps
 
-Add Host Entry - 127.0.0.1 client.testssl.com
-
 keytool -genkeypair -alias server-alias1 -keyalg RSA -dname "CN=*.testssl.com,OU=Local,O=Local,L=ED,S=TN,C=IN" -keypass testssl123 -keystore server-keystore.jks -storepass testssl123
 keytool -genkeypair -alias client-alias1 -keyalg RSA -dname "CN=*.testssl.com,OU=Local,O=Local,L=ED,S=TN,C=IN" -keypass testssl123 -keystore client-keystore.jks -storepass testssl123
 
@@ -23,3 +21,6 @@ keytool -import -keystore client-keystore.jks -file signed-client.cer -alias cli
 keytool -list -v -keystore client-keystore.jks
 keytool -export -alias client-alias1 -file cert_client_keytool.crt -keystore client-keystore.jks
 keytool -import -alias client-alias1 -file cert_client_keytool.crt  -keystore "%JAVA_HOME%\jre\lib\security\cacerts" -storepass changeit
+
+>Note
+Add Host Entry - 127.0.0.1 client.testssl.com
