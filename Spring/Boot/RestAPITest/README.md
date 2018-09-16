@@ -23,4 +23,5 @@ keytool -export -alias client-alias1 -file cert_client_keytool.crt -keystore cli
 keytool -import -alias client-alias1 -file cert_client_keytool.crt  -keystore "%JAVA_HOME%\jre\lib\security\cacerts" -storepass changeit
 
 >Note
+
 Add Host Entry - 127.0.0.1 client.testssl.com
